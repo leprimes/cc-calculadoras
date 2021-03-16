@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadoras</title>
+</head>
+<body>
+    <section class="section">
+        <div class="columns is-centered">
+            <div class="column is-half">
+                <div class="card">
+                    <div class="card-header has-background-info">
+                        <h2 class="card-header-title is-centered">
+                            #calc1 - Calculadora Facturas: Persona Fisica a Moral
+                        </h2>
+                    </div>
+                    <div class="card-content">
+                        <form action="/calculate" id="calc1">
+                            <div class="field">
+                              <label for="factura" class="label">Monto que deseas recibir</label>
+                              <div class="control">
+                                  <input class="input" name="factura" type="text" placeholder="$$"/>
+                              </div>
+                            </div>
+                            <div class="field is-grouped">
+                              <div class="control">
+                                  <button type="submit" class="button is-info">Calcular</button>
+                              </div>
+                              <div id="clearContainer" class="control displayNone">
+                                  <a class="button is-danger is-outlined" id="clear">Borrar</a>
+                              </div>
+                            </div>            
+                          </form>
+                    </div>
+                    <div class="card-footer">
+                        <div id="result" class="p-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section has-background-light">
+        <div class="columns is-centered">
+            <div class="column is-half">
+                <div class="card">
+                    <div class="card-header has-background-info">
+                        <h2 class="card-header-title is-centered">
+                            #calc2 - Calculadora: Declaracion Anual con Retiro
+                        </h2>
+                    </div>
+                    <div class="card-content">
+                        <form action="/calculate" id="calc2">
+                            <div class="field">
+                              <label for="factura" class="label">Tu Ingreso Anual:</label>
+                              <div class="control">
+                                  <input class="input" name="income" type="text" placeholder="$$"/>
+                              </div>
+                            </div>
+                            <div class="field">
+                              <label for="factura" class="label">Plan Anual de Retiro:</label>
+                              <div class="control">
+                                  <input class="input" name="savings" type="text" placeholder="$$"/>
+                              </div>
+                            </div>
+                          <div class="field is-grouped">
+                              <div class="control">
+                                  <button type="submit" class="button is-info">Calcular</button>
+                              </div>
+                              <div id="clearContainer" class="control displayNone">
+                                  <a class="button is-danger is-outlined" id="clear">Borrar</a>
+                              </div>
+                          </div>            
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <div id="result2" class="p-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="columns is-centered">
+            <div class="column is-half">
+                <div class="card">
+                    <div class="card-header has-background-info">
+                        <h2 class="card-header-title is-centered">
+                            #calc3 - Calcula tu Prima Vacacional
+                        </h2>
+                    </div>
+                    <div class="card-content">
+                        <form action="/calculate" id="calc3">
+                            <div class="field">
+                                <label class="label">Sueldo Mensual</label>
+                                <div class="control">
+                                  <input class="input" type="text" name="income" placeholder="Text input">
+                                </div>
+                              </div>
+                              <div class="field">
+                            <label class="label">Años empleado (completos)</label>
+                            <div class="control">
+                                <input class="input" type="text" name="employed" placeholder="Text input">
+                            </div>
+                            </div>
+                            <div class="field">
+                                <button type="submit" class="button is-info">Calcular</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <div id="result3" class="p-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section has-background-light">
+        <div class="columns is-centered">
+            <div class="column is-half">
+                <div class="card">
+                    <div class="card-header has-background-info">
+                        <h2 class="card-header-title is-centered">
+                            #calc4
+                        </h2>
+                    </div>
+                    <div class="card-content">
+                      
+                    </div>
+                    <div class="card-footer">
+                        <div id="result3" class="p-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="app.js"></script>
+</body>
+</html>
